@@ -8,4 +8,10 @@ def index(request):
 
 def home(request):
     message = '<h1>Home de Django</h1>'
+    message = message + "<p>Informacion de Django</p>"
     return HttpResponse(message)
+
+def link(request):
+    message = '<h1>Enlace de Django</h1>'
+    message = message + "<p>Enlace de Django</p>"
+    return HttpResponse(message)    
